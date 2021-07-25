@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* Utility Classes */
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+
+/* Header */
+
+.header {
+    background-color: tomato;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100vw;
+    min-height: 60px;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+/* .container {
+    width: 65%;
+    height: 100vh;
+    padding: 1rem;
+    background-color: teal;
+} */
+
+h1.game-title {
+    margin-top: 2rem;
+}
+
+.form {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 2rem 1rem;
+}
+
+.form input {
+    display: inline-block;
+    width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+input[type=text]:hover {
+    background-color: teal;
+    color: #fff;
+    border: none;
+}
+
+input[type=text]:focus {
+    background-color: #fff;
+    color: #262626;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+input[type=submit] {
+    background-color: teal;
+    border: none;
+    color: #fff;
+}
+
+input[type=submit]:hover {
+    background-color: tomato;
+    border: none;
+    color: #eee;
+    text-transform: uppercase;
+}
+
+.footer {
+    background-color: tomato;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 60px;
+    padding: 1rem;
+    text-align: center;
+}
