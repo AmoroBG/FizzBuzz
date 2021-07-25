@@ -14,8 +14,10 @@ playGame.addEventListener("click", function() {
     }
     // console.log(fizzBuzz())
     // resultBoard.innerText = fizzBuzz()
+    addResultClass()
     fizzBuzz()
     inputBox.value = ""
+
 })
 
 // Prompt user for the number
@@ -25,6 +27,7 @@ playGame.addEventListener("click", function() {
 function validateInput() {
     if (number < 1 || number > 100) {
         alert("Number must be between 1 and 100")
+        inputBox.value = ""
         return false
     }
     return true
@@ -49,4 +52,9 @@ function fizzBuzz() {
         resultBoard.innerText += counts + "\u00a0"
     }
 
+}
+
+//function addResultClass
+function addResultClass() {
+    resultBoard.classList.add("result")
 }
