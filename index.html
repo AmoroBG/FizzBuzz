@@ -12,23 +12,32 @@
 </head>
 
 <body>
+    <!-- Header -->
     <header class="header">
         <h1> FizzBuzz Game</h1>
     </header>
     <main class="main">
-        <div class="game-board">
-            <h1 class="game-title">Play Fizz Buzz Game</h1>
-            <form action="" class="form">
-                <input type="text" placeholder="Enter Count Limit">
-                <input type="submit" value="Play">
-            </form>
-        </div>
+        <!-- Game Board -->
+        <section class="game-board">
+            <h1 class="game-title">Fizz Buzz Game</h1>
+            <!-- Form -->
+            <div class="form">
+                <input type="number" placeholder="Enter Count Limit" id="input-box">
+                <button class="btn btn-play" id="play-game"> Play</button>
+            </div>
+        </section>
+        <!-- Result Board -->
+        <section id="result-board">
+            <h3 class="result-counts" id="result-board-counts"> </h3>
+        </section>
     </main>
+
+    <!-- Footer -->
     <footer class="footer">
         <p>Fizz Buzz is use to teach children division</p>
     </footer>
     <!-- JS Link  - main.js -->
-    <!-- <script src="main.js"></script> -->
+    <script src="main.js"></script>
 </body>
 
 </html>

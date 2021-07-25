@@ -53,7 +53,8 @@ h1.game-title {
     padding: 2rem 1rem;
 }
 
-.form input {
+input,
+.btn {
     display: inline-block;
     width: 100%;
     margin: 1rem;
@@ -64,13 +65,13 @@ h1.game-title {
     font-weight: bold;
 }
 
-input[type=text]:hover {
+input[type=number]:hover {
     background-color: teal;
     color: #fff;
     border: none;
 }
 
-input[type=text]:focus {
+input[type=number]:focus {
     background-color: #fff;
     color: #262626;
     border: none;
@@ -78,17 +79,29 @@ input[type=text]:focus {
     text-align: center;
 }
 
-input[type=submit] {
+.btn-play {
     background-color: teal;
     border: none;
     color: #fff;
 }
 
-input[type=submit]:hover {
+.btn-play:hover {
     background-color: tomato;
     border: none;
     color: #eee;
     text-transform: uppercase;
+}
+
+
+/* result */
+
+.result {
+    background-color: #fff;
+    width: 65%;
+    margin: auto;
+    padding: 1rem;
+    border: 1px dashed teal;
+    border-radius: 5px;
 }
 
 .footer {
